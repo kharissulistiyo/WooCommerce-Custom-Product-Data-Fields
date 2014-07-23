@@ -23,7 +23,7 @@ At the very first release, supported fields are:
 
 ## Defining Your Fields
 
-Put this example fields in functions.php of your theme.
+To make your own fields (as seen on the screenshot above), put this example fields in functions.php of your theme.
 
 ```
 /**
