@@ -130,8 +130,8 @@ if(!function_exists('wc_custom_product_data_fields')){
 /**
 *
 * $wc_cpdf->get_value($post_id, $field_id);
-* $post_id = (int) post ID
-* $field_id = (var) unique field ID
+* $post_id = (integer) post ID
+* $field_id = (string) unique field ID
 *
 */
 
