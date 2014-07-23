@@ -7,7 +7,13 @@ WooCommerce Custom Product Data Fields is a simple framework which will help you
 
 You can use this framework as a library of your ‘brand-new’ WooCommerce Extension.
 
-P.S: This project is under development. About 80% Completed. Here are some information about this project:
+
+## Installation
+
+1. Upload this plugin to the /wp-content/plugins/ directory.
+2. Activate the plugin through the Plugins menu in WordPress.
+3. Define your custom product data fields in your theme `functions.php` file. See `fields-init.php` inside this plugin folder.
+
 
 ## Available Fields
 
@@ -27,7 +33,8 @@ To make your own fields (as seen on the screenshot above), put this example fiel
 
 ```
 /**
- * Setting Up The Custom Product Data Fields
+ * (Example) Setting Up The Custom Product Data Fields.
+ * Copy this function to your theme functions.php file.
  * Do not rename the function name, otherwise your fields won't be read.
  **/
 
@@ -63,7 +70,7 @@ if(!function_exists('wc_custom_product_data_fields')){
     );
 
     $custom_product_data_fields[] = array(
-          'id'          => '_textarea',
+          'id'          => '_mytextarea',
           'type'        => 'textarea',
           'label'       => __('Textarea', 'wc_cpdf'),
           'placeholder' => __('A placeholder text goes here.', 'wc_cpdf'),
@@ -73,7 +80,7 @@ if(!function_exists('wc_custom_product_data_fields')){
     );
 
     $custom_product_data_fields[] = array(
-          'id'          => '_checkbox',
+          'id'          => '_mycheckbox',
           'type'        => 'checkbox',
           'label'       => __('Checkbox', 'wc_cpdf'),
           'description' => __('Field description.', 'wc_cpdf'),
