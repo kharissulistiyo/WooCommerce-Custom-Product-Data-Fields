@@ -1,6 +1,8 @@
 WooCommerce Custom Product Data Fields
 ======================================
 
+<img src="https://raw.githubusercontent.com/kharissulistiyo/WooCommerce-Custom-Product-Data-Fields/master/screenshot.png" alt="WooCommerce Custom Product Data Fields"/>
+
 WooCommerce Custom Product Data Fields is a simple framework which will help you to build extra product data fields, e.g. secondary product title, vendor info, custom message for individual product, etc.
 
 You can use this framework as a library of your ‘brand-new’ WooCommerce Extension.
