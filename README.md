@@ -147,6 +147,13 @@ global $wc_cpdf;
 echo $wc_cpdf->get_value(get_the_ID(), '_mytext');
 ```
 
+## License
+
+[GNU General Public License v3.0]: http://www.gnu.org/licenses/gpl-3.0.html
+
+[GNU General Public License v3.0][]
+
+
 ## More Info
 
 [kharisulistiyo(at)gmail(dot)com]: mailto:kharisulistiyo@gmail.com
