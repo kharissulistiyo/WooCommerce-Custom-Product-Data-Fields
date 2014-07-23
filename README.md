@@ -147,5 +147,5 @@ echo $wc_cpdf->get_value(get_the_ID(), '_mytext');
 
 Contact me:
 
-* Mail: [kharisulistiyo(at)gmail(cot)com][]
+* Mail: [kharisulistiyo(at)gmail(dot)com][]
 * Twitter: [@kharissulistiyo][]
