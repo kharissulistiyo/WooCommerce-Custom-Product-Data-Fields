@@ -3,11 +3,11 @@
  * Plugin Name: WooCommerce Custom Product Data Fields
  * Plugin URI: https://github.com/kharissulistiyo/WooCommerce-Custom-Product-Data-Fields
  * Description: Simple framework which will help you to build extra product data fields, e.g. secondary product title, vendor info, custom message for individual product, etc.
- * Version: 0.1
+ * Version: 1.0.2
  * Author: Kharis Sulistiyono
  * Author URI: http://kharisulistiyo.github.io
  * Requires at least: 3.1
- * Tested up to: 3.5.1
+ * Tested up to: 3.9.1
  *
  * Text Domain: wc_cpdf
  * Domain Path: /lang/

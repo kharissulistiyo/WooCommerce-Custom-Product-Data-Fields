@@ -1,27 +1,22 @@
-WooCommerce Custom Product Data Fields
-======================================
+=== WooCommerce Custom Product Data Fields ===
+Contributors: Kharis Sulistiyono
+Tags: ecommerce, e-commerce, commerce, woocommerce, extension, product, tab, framework
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ACYNA5XNUGBUL
+Requires at least: 3.1
+Tested up to: 3.9.1
+Stable tag: 1.0.2
+License: GPLv3
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
 
-<img src="https://raw.githubusercontent.com/kharissulistiyo/WooCommerce-Custom-Product-Data-Fields/master/screenshot.png" alt="WooCommerce Custom Product Data Fields"/>
+WooCommerce extension which will help you to build extra product data fields easily.
 
-WooCommerce Custom Product Data Fields is a simple framework which will help you to build extra product data fields, e.g. secondary product title, vendor info, custom message for individual product, etc.
+== Description ==
+
+WooCommerce Custom Product Data Fields is a simple framework which will help you to build extra product data fields easily, e.g. secondary product title, vendor info, custom message for individual product, etc.
 
 You can use this framework as a library of your ‘brand-new’ WooCommerce Extension.
 
-[Download]: http://wordpress.org/plugins/woocommerce-custom-product-data-fields/
-
-[Download][] stable version from WordPress.org plugin repository.
-
-
-## Installation
-
-1. Upload this plugin to the /wp-content/plugins/ directory.
-2. Activate the plugin through the Plugins menu in WordPress.
-3. Define your custom product data fields in your theme `functions.php` file. See `fields-init.php` inside this plugin folder.
-
-
-## Available Fields
-
-At the very first release, supported fields are:
+= Available Fields =
 
 * text
 * number
@@ -31,11 +26,11 @@ At the very first release, supported fields are:
 * radio
 * hidden
 
-## Defining Your Fields
+= Defining Your Fields =
 
-To make your own fields (as seen on the screenshot above), put this example fields in functions.php of your theme.
+To make your own fields as seen on the [screenshot](https://wordpress.org/plugins/woocommerce-custom-product-data-fields/screenshots/), put this example fields in functions.php of your theme.
 
-```
+<code>
 /**
  * (Example) Setting Up The Custom Product Data Fields.
  * Copy this function to your theme functions.php file.
@@ -132,12 +127,12 @@ if(!function_exists('wc_custom_product_data_fields')){
 
 
 }
-```
+</code>
 
 
-## Getting The Field Value
+= Getting The Field Value =
 
-```
+<code>
 /**
 *
 * $wc_cpdf->get_value($post_id, $field_id);
@@ -149,21 +144,31 @@ if(!function_exists('wc_custom_product_data_fields')){
 global $wc_cpdf;
 
 echo $wc_cpdf->get_value(get_the_ID(), '_mytext');
-```
+</code>
 
-## License
+This project is also available on [Github](https://github.com/kharissulistiyo/WooCommerce-Custom-Product-Data-Fields).
 
-[GNU General Public License v3.0]: http://www.gnu.org/licenses/gpl-3.0.html
+= More info =
 
-[GNU General Public License v3.0][]
+Send me your question to my contacts below:
+
+Mail: [kharisulistiyo(at)gmail(dot)com](mailto:kharisulistiyo@gmail.com)
+Twitter:  [@kharissulistiyo](http://twitter.com/kharissulistiyo)
+
+P.S: Don't be worry, I always reply. :)
 
 
-## More Info
+== Installation ==
 
-[kharisulistiyo(at)gmail(dot)com]: mailto:kharisulistiyo@gmail.com
-[@kharissulistiyo]: http://twitter.com/kharissulistiyo
+1. Upload this plugin to the /wp-content/plugins/ directory.
+2. Activate the plugin through the Plugins menu in WordPress.
+3. Define your custom product data fields in your theme `functions.php` file. See `fields-init.php` inside this plugin folder.
 
-Contact me:
+== Screenshots ==
 
-* Mail: [kharisulistiyo(at)gmail(dot)com][]
-* Twitter: [@kharissulistiyo][]
+1. WooCommerce Custom Product Data Fields
+
+== Changelog ==
+
+= 1.0 =
+* Initial release
