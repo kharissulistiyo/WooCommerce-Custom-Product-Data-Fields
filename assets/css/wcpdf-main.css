@@ -1,0 +1,130 @@
+.wc_cpdf_tab .form-field{
+  /* border-bottom: 1px solid #ddd; */
+}
+
+#image-uploader-meta-box-list:after{
+  display:block;
+  content:'';
+  clear:both;
+}
+#image-uploader-meta-box-list li {
+  float: left;
+  width: 150px;
+  height:auto;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+}
+input.iumb{
+  width:50%;
+}
+#image-uploader-meta-box-list li img{
+  max-width:150px;
+}
+a.iumb-add.none, a.change-image.none, a.remove-image.none{
+  display:none;
+  visibility:hidden;
+}
+
+
+/**
+ * @ December 15
+ */
+
+
+/* Image field */
+
+.image-field-wrapper{
+  margin: 15px 0;
+}
+
+.image-field-wrapper::before,
+.image-field-wrapper::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.image-field-wrapper > div{
+  float: left;
+}
+
+.image-field-wrapper .image-field-label{
+  width: 162px;
+}
+
+.image-field-wrapper .image-field-label span{
+  margin-left: 12px;
+}
+
+.image-field-wrapper .image-field-upload{
+  width: 59%;
+}
+
+.image-field-wrapper .image-field-upload .wcpdf_image_url{
+  height: 28px;
+  margin-right: 3px;
+}
+
+.image-field-wrapper .image-field-upload p{
+  margin: 0;
+}
+
+.preview-image-wrapper,
+.gal-item{
+  max-width: 110px;
+  position: relative;
+}
+
+.gallery .preview-image-wrapper{
+  max-width: 100%;
+}
+
+.gallery .preview-image-wrapper::before,
+.gallery .preview-image-wrapper::after{
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.gallery .gal-item{
+  float: left;
+  margin-right: 7px;
+}
+
+a.wcpdf-remove-image{
+  text-decoration: none;
+  color: #f00;
+  display: inline-block;
+  position: absolute;
+  top: -2px;
+  right: -4px;
+  background: #fff;
+  line-height: 1;
+  padding: 2px 2px 1px 2px;
+  border-radius: 100%;
+}
+
+a.wcpdf-remove-image em{
+  display: none;
+}
+
+a.wcpdf-remove-image::before{
+  font-family: WooCommerce;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  content: "\e013";
+}
+
+
+.preview-image-wrapper img{
+  margin-top: 5px;
+  padding: 2px;
+  border: 1px solid #ddd;
+}
+
+.wcpdf_saved_image,
+.preview-image-wrapper img{
+  max-width: 100px;
+  height: auto;
+}
