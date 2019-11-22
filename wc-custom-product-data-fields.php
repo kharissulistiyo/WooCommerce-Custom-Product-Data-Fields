@@ -23,8 +23,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 // Required minimum version of WordPress.
-if ( ! function_exists( 'wc_productdata_options_wp_requred' ) ) {
-	function wc_productdata_options_wp_requred() {
+if ( ! function_exists( 'wc_productdata_options_wp_required' ) ) {
+	function wc_productdata_options_wp_required() {
 		global $wp_version;
 		$plugin      = plugin_basename( __FILE__ );
 		$plugin_data = get_plugin_data( __FILE__, false );
@@ -36,10 +36,8 @@ if ( ! function_exists( 'wc_productdata_options_wp_requred' ) ) {
 			}
 		}
 	}
-
-	add_action( 'admin_init', 'wc_productdata_options_wp_requred' );
 }
-
+add_action( 'admin_init', 'wc_productdata_options_wp_required' );
 
 // Checks if the WooCommerce plugins is installed and active.
 if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
