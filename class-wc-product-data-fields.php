@@ -154,7 +154,7 @@ if ( ! class_exists( 'WC_Product_Data_Fields' ) ) {
 
 						foreach ( $fields_array as $field ) {
 
-							if ( ! $field['tab_name'] ) {
+							if ( ! isset( $field['tab_name'] )  ) {
 
 								WC_Product_Data_Fields::wc_product_data_options_fields( $field );
 
