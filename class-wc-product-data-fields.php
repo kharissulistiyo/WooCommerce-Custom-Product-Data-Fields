@@ -154,7 +154,7 @@ if ( ! class_exists( 'WC_Product_Data_Fields' ) ) {
 
 						foreach ( $fields_array as $field ) {
 
-							if ( ! isset( $field['tab_name'] )  ) {
+							if ( ! isset( $field['tab_name'] ) ) {
 
 								WC_Product_Data_Fields::wc_product_data_options_fields( $field );
 
@@ -510,9 +510,7 @@ if ( ! class_exists( 'WC_Product_Data_Fields' ) ) {
                         <div id="image-uploader-meta-box" class="image-field-upload">
 
                             <div class="preview-image-wrapper">
-
 								<?php
-
 								if ( is_array( $saved_gallery ) ): foreach ( $saved_gallery as $img_id ) {
 									$saved_image_url       = wp_get_attachment_image_src( $img_id );
 									$saved_image_url_thumb = wp_get_attachment_image_src( $img_id, 'thumbnail', true );
@@ -536,7 +534,7 @@ if ( ! class_exists( 'WC_Product_Data_Fields' ) ) {
                                    data-name="<?php echo esc_attr( $field['id'] ); ?>" name="name-needle" value=""/>
                             <input class="wcpdf_image_url" type="hidden"
                                    name="wcpdf_image_url_<?php echo $field['id']; ?>"
-                                   value="<?php echo ( $saved_image ) ? $saved_image_url[0] : ''; ?>"/>
+                                   value=""/>
                             <a class="wcpdf-uppload-image-gallery button" href="#"
                                data-uploader-title="<?php echo __( 'Choose images', 'wc_cpdf' ) ?>"
                                data-uploader-button-text="<?php echo __( 'Choose images', 'wc_cpdf' ) ?>"><?php echo __( 'Choose images', 'wc_cpdf' ) ?></a>
