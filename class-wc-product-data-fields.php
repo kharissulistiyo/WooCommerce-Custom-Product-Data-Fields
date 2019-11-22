@@ -382,7 +382,7 @@ if(!class_exists('WC_Product_Data_Fields')){
 
             $html .= '<select multiple="multiple" class="multiselect wc-enhanced-select '.$field['class'].'" name="' . esc_attr( $field['id'] ) . '[]" style="width: 90%;"  data-placeholder="'.$field['placeholder'].'">';
 
-            $saved_val = $wc_cpdf->get_value($thepostid, $field['id']) ? $wc_cpdf->get_value($thepostid, $field['id']) : array();
+            $saved_val = $this->get_value($thepostid, $field['id']) ? $this->get_value($thepostid, $field['id']) : array();
 
             foreach ( $field['options'] as $key => $value ) {
 
@@ -413,7 +413,7 @@ if(!class_exists('WC_Product_Data_Fields')){
 
             global $wc_cpdf;
 
-            $saved_image = $wc_cpdf->get_value($thepostid, $field['id']);
+            $saved_image = $this->get_value($thepostid, $field['id']);
             $saved_image_url = wp_get_attachment_image_src($saved_image);
             $saved_image_url_thumb = wp_get_attachment_image_src($saved_image, 'thumbnail', true);
 
@@ -468,7 +468,7 @@ if(!class_exists('WC_Product_Data_Fields')){
 
             global $wc_cpdf;
 
-            $saved_gallery = $wc_cpdf->get_value($thepostid, $field['id']);
+            $saved_gallery = $this->get_value($thepostid, $field['id']);
 
           ?>
 
